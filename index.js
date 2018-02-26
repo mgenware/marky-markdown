@@ -10,9 +10,7 @@ var defaultOptions = {
   linkify: true,
   prefixHeadingIds: true,
   enableHeadingLinkIcons: true,
-  serveImagesWithCDN: false,
   debug: false,
-  package: null,
   headingAnchorClass: 'anchor',
   headingSvgClass: ['octicon', 'octicon-link']
 }
