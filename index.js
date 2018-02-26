@@ -8,7 +8,6 @@ var defaultOptions = {
   sanitize: true,
   nofollow: true,
   linkify: true,
-  highlightSyntax: true,
   prefixHeadingIds: true,
   enableHeadingLinkIcons: true,
   serveImagesWithCDN: false,
@@ -39,7 +38,7 @@ var marky = module.exports = function (markdown, options) {
 
   log('\n\n' + markdown + '\n\n')
 
-  log('Parse markdown into HTML and add syntax highlighting')
+  log('Parse markdown into HTML')
   html = render(markdown, options)
 
   if (options.sanitize) {
