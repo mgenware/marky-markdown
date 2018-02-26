@@ -6,7 +6,7 @@ var markyInfo = require('./marky.json')
 
 var defaultOptions = {
   sanitize: true,
-  nofollow: true,
+  nofollow: false,
   linkify: true,
   prefixHeadingIds: true,
   enableHeadingLinkIcons: true,
