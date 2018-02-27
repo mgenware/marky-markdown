@@ -1,6 +1,6 @@
 {
-  "name": "marky-markdown",
-  "version": "12.0.0",
+  "name": "cf-marky-markdown",
+  "version": "1.0.0",
   "description": "npm's markdown parser",
   "main": "index.js",
   "scripts": {
