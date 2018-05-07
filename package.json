@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "prebuild": "node bin/build-marky-info.js",
-    "build": "rm -rf dist && mkdir dist && touch dist/marky-markdown.js && browserify index.js -s markyMarkdown > dist/marky-markdown.js",
+    "build": "rm -rf dist && mkdir dist && touch dist/marky-markdown.js && browserify index.js -s markyMarkdown > dist/marky-markdown.js && uglifyjs dist/marky-markdown.js -cmo dist/marky-markdown.js",
     "test": "standard --fix && mocha --timeout 8000",
     "pretest": "npm run build",
     "prepublish": "npm run build",
@@ -62,7 +62,8 @@
     "mocha": "^3.5.3",
     "oniguruma": "^7.0.0",
     "standard": "^10.0.0",
-    "standard-version": "^4.1.0"
+    "standard-version": "^4.1.0",
+    "uglify-js": "^3.3.23"
   },
   "bin": "./bin/marky-markdown.js",
   "standard": {
