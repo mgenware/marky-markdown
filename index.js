@@ -12,6 +12,7 @@ var defaultOptions = {
   enableHeadingLinkIcons: true,
   debug: false,
   headingAnchorClass: 'anchor',
+  headingLinks: true,
   headingSvgClass: ['octicon', 'octicon-link']
 }
 
